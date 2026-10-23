@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --color-bg: #131413;
+    --color-surface: #181A18;
+    --color-surface-raised: #202320;
+    --color-border: #303530;
+    --color-text: #F4F5F1;
+    --color-text-muted: #A4AAA2;
+    --color-accent: #c8f169;
+    --color-accent-hover: #caf076;
+    --color-danger: #FF7777;
+    --color-success: #8FE0A0;
+    --color-overlay: rgba(0, 0, 0, 0.65);
+    --shadow-card: 0 12px 32px rgba(0, 0, 0, 0.18);
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #131413;
+    color: #e4e2e0;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Custom scrollbars (subtle and dark) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131413;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #292a29;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #343534;
+}
+
+/* Material Symbols configuration */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
